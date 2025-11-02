@@ -17,7 +17,7 @@ public:
     }
     void talk()
     {
-        cout << "not able to talk"<<'\n';
+        cout << "not able to talk" << '\n';
     }
 };
 class FastTalk : public Talk
@@ -28,7 +28,7 @@ public:
     }
     void talk()
     {
-        cout << "able to talk"<<'\n';
+        cout << "able to talk" << '\n';
     }
 };
 class Walk
@@ -47,7 +47,7 @@ public:
     }
     void walk()
     {
-        cout << "not able to walk"<<'\n';
+        cout << "not able to walk" << '\n';
     }
 };
 class FastWalk : public Walk
@@ -58,7 +58,7 @@ public:
     }
     void walk()
     {
-        cout << "able to walk"<<'\n';
+        cout << "able to walk" << '\n';
     }
 };
 class See
@@ -66,13 +66,15 @@ class See
 public:
     See()
     {
-        cout << "all can see \n"<<'\n';
+        cout << "all can see \n"
+             << '\n';
     }
 };
 class Robot
 {
     Walk *w;
     Talk *t;
+    See *s; //  instead of making see an property of the robot class we are making see as an class and then making a pointer in it
 
 public:
     Robot(Walk *w, Talk *t)

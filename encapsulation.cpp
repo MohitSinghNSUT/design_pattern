@@ -97,6 +97,7 @@ public:
 class donkey
 {
 public:
+    int age;
     donkey()
     {
         cout << "donkey\n ";
@@ -105,6 +106,7 @@ public:
 class horse
 {
 public:
+    int age;
     horse()
     {
         cout << "horse \n";
@@ -117,6 +119,8 @@ class mule : public horse, public donkey
 public:
     mule()
     {
+        // age is now available from both so this is diamond problem and solved using :: operator
+        cout << horse::age << '\n';
         cout << "mule\n";
     }
 };
