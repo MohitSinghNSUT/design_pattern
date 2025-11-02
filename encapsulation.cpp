@@ -45,10 +45,6 @@ public:
     // they only have access to classes in online mode
 };
 
-
-// INHERITANCE
-
-
 //******************************************************************************************************************************************
 
 // parent child
@@ -159,5 +155,4 @@ int main()
     female *f = new female();
     mule *m = new mule();
     C *c = new C();
-    cout<<m->horse::age<<'\n'; // used in this way 
 }
